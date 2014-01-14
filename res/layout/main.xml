@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/attackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="27dp"
+        android:text="Attack" />
+
+    <Button
+        android:id="@+id/defendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/attackButton"
+        android:layout_alignBottom="@+id/attackButton"
+        android:layout_centerHorizontal="true"
+        android:text="Defend" />
+
+    <Button
+        android:id="@+id/chargeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/defendButton"
+        android:layout_alignBottom="@+id/defendButton"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/defendButton"
+        android:text="Charge" />
+
+    <TextView
+        android:id="@+id/spriteHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/chargeButton"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="25dp"
+        android:text="Sprite HP:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/spriteMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spriteHP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Sprite Move"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ownerHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+		android:layout_marginBottom="100dp"
+		android:layout_marginLeft="20dp"
+        android:text="Owners HP:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ownerMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="200dp"
+        android:text="Owner Move"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/statsButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spriteHP"
+        android:layout_alignBottom="@+id/spriteHP"
+        android:layout_alignLeft="@+id/ownerHP"
+        android:text="Stats" />
+
+</RelativeLayout>
